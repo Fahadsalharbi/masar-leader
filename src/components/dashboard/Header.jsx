@@ -41,7 +41,7 @@ export default function Header({ currentUser, time, onLogout, tasks = [], onIcon
     <header className="flex justify-between items-center bg-white shadow p-4 relative" dir="rtl">
       {/* الجانب الأيمن */}
       <div className="flex items-center gap-4">
-        <h1 className="text-2xl font-bold text-green-700">مسار القيادة</h1>
+        <h1 className="text-2xl font-bold text-green-700">مسار القادة</h1>
         {currentUser && (
           <div className="flex items-center gap-2 text-gray-600">
             <span>هلا، {currentUser.name}</span>
@@ -142,4 +142,5 @@ export default function Header({ currentUser, time, onLogout, tasks = [], onIcon
       </div>
     </header>
   );
+
 }
