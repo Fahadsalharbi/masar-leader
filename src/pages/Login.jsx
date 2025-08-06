@@ -73,7 +73,7 @@ const Login = () => {
         {/* العنوان مع شعار الرؤية */}
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-[#005c30] mb-2 animate-fade-in">
-            نــظــام مـسـار القيادة
+            نــظــام مـسـار القادة
           </h1>
           <p className="text-gray-600">إدارة مشاريعك ومهامك</p>
         </div>
@@ -150,5 +150,6 @@ const Login = () => {
     </div>
   );
 };
+
 
 export default Login;
