@@ -144,7 +144,7 @@ const Login = () => {
 
         {/* حقوق الملكية */}
         <p className="mt-8 text-center text-sm text-gray-500">
-          © 2025 نظام مسار القيادة. جميع الحقوق محفوظة.
+          © 2025 نظام مسار القادة. جميع الحقوق محفوظة.
         </p>
       </div>
     </div>
@@ -153,3 +153,4 @@ const Login = () => {
 
 
 export default Login;
+
