@@ -504,7 +504,7 @@ export default function Dashboard() {
       </head>
       <body>
         <div class="print-header">
-          <h1>نظام مسار القيادة - بطاقة المهمة</h1>
+          <h1>نظام مسار القادة - بطاقة المهمة</h1>
           <p>تاريخ الطباعة: ${new Date().toLocaleDateString('ar-SA')}</p>
         </div>
         
@@ -565,7 +565,7 @@ export default function Dashboard() {
         </table>
         
         <div class="footer">
-          نظام مسار القيادة - إصدار ${new Date().getFullYear()}
+          نظام مسار القادة - إصدار ${new Date().getFullYear()}
         </div>
       </body>
       </html>
@@ -713,7 +713,7 @@ export default function Dashboard() {
       </head>
       <body>
         <div class="print-header">
-          <h1>نظام مسار القيادة - بطاقة المشروع</h1>
+          <h1>نظام مسار القادة - بطاقة المشروع</h1>
           <p>تاريخ الطباعة: ${new Date().toLocaleDateString('ar-SA')}</p>
         </div>
         
@@ -786,7 +786,7 @@ export default function Dashboard() {
         </table>
         
         <div class="footer">
-          نظام مسار القيادة - إصدار ${new Date().getFullYear()}
+          نظام مسار القادة - إصدار ${new Date().getFullYear()}
         </div>
       </body>
       </html>
@@ -958,7 +958,7 @@ export default function Dashboard() {
       </head>
       <body>
         <div class="print-header">
-          <h1>نظام مسار القيادة - كافة المشاريع مع المهام</h1>
+          <h1>نظام مسار القادة - كافة المشاريع مع المهام</h1>
           <p>تاريخ الطباعة: ${new Date().toLocaleDateString('ar-SA')}</p>
           <p>عدد المشاريع: ${projects.length} | عدد المهام: ${tasks.length}</p>
         </div>
@@ -1040,7 +1040,7 @@ export default function Dashboard() {
         }).join('')}
         
         <div class="footer">
-          نظام مسار القيادة - إصدار ${new Date().getFullYear()}
+          نظام مسار القادة - إصدار ${new Date().getFullYear()}
         </div>
       </body>
       </html>
