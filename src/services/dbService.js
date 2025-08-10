@@ -67,7 +67,7 @@ export const saveProject = (db, project) => {
 export const deleteProject = (db, projectId) => {
   return new Promise((resolve, reject) => {
     const transaction = db.transaction('projects', 'readwrite');
-    const store = transaction.objectObjectStore('projects');
+    const store = transaction.objectStore('projects');
     const request = store.delete(projectId);
 
     request.onerror = (event) => {
