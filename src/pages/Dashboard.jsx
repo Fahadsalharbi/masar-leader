@@ -970,26 +970,10 @@ export default function Dashboard() {
         
         ${projects.map(project => {
           const projectTasks = tasks.filter(task => task.projectId === project.id);
-        
-          // 🎨 مجموعة ألوان ثابتة ومنسقة
-          const colorPalette = [
-            '#245C36', // أخضر غامق
-            '#1E88E5', // أزرق سماوي
-            '#6A1B9A', // بنفسجي
-            '#F57C00', // برتقالي
-            '#C2185B', // وردي غامق
-            '#455A64', // رمادي أزرق
-            '#2E7D32', // أخضر فاتح
-            '#0277BD', // أزرق متوسط
-          ];
-        
-          // اختيار لون بناءً على ترتيب المشروع (دوري)
-          const projectColor = colorPalette[index % colorPalette.length];
-        
           return `
             <div class="project-card">
-              <div class="project-header" style="border-right: 6px solid ${projectColor};">
-                <h3 class="project-title" style="color: ${projectColor};">${project.name}</h3>
+              <div class="project-header">
+                <h3 class="project-title">${project.name}</h3>
                 <div class="project-meta">
                   <div class="project-meta-item">
                     <span>المسؤول: ${project.owner}</span>
