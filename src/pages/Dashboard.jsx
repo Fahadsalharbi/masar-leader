@@ -991,19 +991,19 @@ export default function Dashboard() {
               </div>
               
               ${projectTasks.length > 0 ? `
-                <table class="tasks-table">
-                  <thead>
-                    <tr>
-                      <th width="20%">المهمة</th>
-                      <th width="10%">الحالة</th>
-                      <th width="10%">الأولوية</th>
-                      <th width="10%">التقدم</th>
-                      <th width="15%">تاريخ البدء</th>
-                      <th width="15%">تاريخ الانتهاء</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    ${projectTasks.map(task => `
+                ${projectTasks.map(task => `
+                  <table class="tasks-table" style="margin-bottom: 20px;">
+                    <thead>
+                      <tr>
+                        <th width="20%">المهمة</th>
+                        <th width="10%">الحالة</th>
+                        <th width="10%">الأولوية</th>
+                        <th width="10%">التقدم</th>
+                        <th width="15%">تاريخ البدء</th>
+                        <th width="15%">تاريخ الانتهاء</th>
+                      </tr>
+                    </thead>
+                    <tbody>
                       <tr>
                         <td>${task.title}</td>
                         <td>
@@ -1032,9 +1032,9 @@ export default function Dashboard() {
                           </td>
                         </tr>
                       ` : ''}
-                    `).join('')}
-                  </tbody>
-                </table>
+                    </tbody>
+                  </table>
+                `).join('')}
               ` : `
                 <div style="padding: 20px; text-align: center; color: #666;">
                   لا توجد مهام لهذا المشروع
