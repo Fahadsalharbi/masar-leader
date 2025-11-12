@@ -912,6 +912,11 @@ export default function Dashboard() {
             border: 1px solid #e0e0e0;
             text-align: right;
           }
+
+          .tasks-table tr + tr {
+            border-top: 8px solid #fff;
+          }
+
           .tasks-table tr:nth-child(even) {
             background-color: #f9f9f9;
           }
