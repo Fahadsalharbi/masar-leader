@@ -970,10 +970,14 @@ export default function Dashboard() {
         
         ${projects.map(project => {
           const projectTasks = tasks.filter(task => task.projectId === project.id);
+          
+          // توليد لون عشوائي جميل (درجات لونية متناسقة)
+          const randomColor = `hsl(${Math.floor(Math.random() * 360)}, 60%, 35%)`;
+        
           return `
             <div class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">${project.name}</h3>
+              <div class="project-header" style="border-right: 6px solid ${randomColor};">
+                <h3 class="project-title" style="color: ${randomColor};">${project.name}</h3>
                 <div class="project-meta">
                   <div class="project-meta-item">
                     <span>المسؤول: ${project.owner}</span>
